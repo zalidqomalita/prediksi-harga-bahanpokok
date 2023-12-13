@@ -130,7 +130,7 @@ def main():
     data['Harga']=data['Harga'].astype(int)
     sc = MinMaxScaler(feature_range=(0,1))
 
-    hari = st.slider("Tentukan jumlah hari", 1, 30,step=1)
+    hari = st.slider("Tentukan jumlah hari", 1, 15,step=1)
     
 
     if st.button('Prediksi'):
