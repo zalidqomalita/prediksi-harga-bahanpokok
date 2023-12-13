@@ -1,18 +1,14 @@
 from dataclasses import dataclass
-import pickle
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 from keras.models import load_model
-from keras import backend as K
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 import numpy as np
 import requests
 from dateutil.relativedelta import relativedelta
 from datetime import datetime
-import matplotlib.dates as dates
-import time
+import matplotlib.pyplot as plt
 
 @st.cache(suppress_st_warning=True)
 def get_data_api():
