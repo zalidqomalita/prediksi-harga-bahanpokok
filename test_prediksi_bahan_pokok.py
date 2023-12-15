@@ -162,9 +162,10 @@ def main():
         print("-----------Data eksisting + Prediksi --------")
         print(data_baru)
 
-        col1,col2 = st.columns([2,3])
+        col1,col2 = st.columns([0.3,0.7])
         with col1:
             #data_pred['Harga'] = data_pred['Harga'].reshape(-1,1)
+            col1.subheader("Hasil Prediksi")
             st.dataframe(data_pred)
         with col2:
             fig, ax = plt.subplots()
